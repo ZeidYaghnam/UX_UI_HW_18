@@ -1,22 +1,9 @@
-.inline-block{
-    display: inline-block;
-    vertical-align: top;
-}
-
-.logo{
-width: 23%;
-padding: 1%;
-text-align:center;
-}
-
 nav{
-    width:73%;
-    padding:1%;
+    padding: 1%;
 }
 
-nav ul li{
-    display: inline-block;
-    align-content: center;
+nav ul{
+    text-align: right;
 }
 
 .heroImg{
@@ -32,17 +19,14 @@ footer{
 }
 
 ul{
-    position: center;
-    display: inline-block;
-    vertical-align:top;
-    margin-left:auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left:50%
 }
 
 p{
    font-family: helvetica, sans-serif;
-   justify-content: center;
-   margin-left: 100px;
-   margin-right: 100px;
+   text-align: center;
 }
 
 ul li{
@@ -53,8 +37,6 @@ ul li{
 
 #navWrapper{
     background-color: rgb(45, 45, 45);
-    display: flex;
-    align-content: center;
 }
 
 .heading{
@@ -65,6 +47,12 @@ ul li{
     padding-top: 50px;
 }
 
-#subhead{
-    display:flex;
+#subHead{
+    display: flex;
+    justify-content: center;
+}
+
+#resume{
+    display: flex;
+    justify-content: center;
 }
