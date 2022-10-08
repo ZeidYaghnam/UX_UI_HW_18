@@ -53,56 +53,61 @@ ul li{
 }
 
 section#mySkills article{
-    height: 620px;
+    max-height: 620px;
+    display: flex;
     margin: 50px;
-    border: 2px solid white;
+    border: 2px solid red;
 }
 
 section#mySkills article div.imageContainerR{
-    height: 100%;
+    /* height: 100%; */
     width: 48%;
     scale: 0.85;
 }
 
 .imageContainerR{
-    float: right;
+    /* float: right; */
     display: flex;
     align-content: center;
 }
 
 section#mySkills article div.imageContainerL{
-    height: 100%;
+    /* height: 100%; */
     width: 48%;
     scale: 0.85;
 }
 
 .imageContainerL{
-    float: left;
+    /* float: left; */
     display: flex;
     align-content: center;
 }
 
 .descriptionR{
     width: 48%;
-    float: right;
+    /* float: right; */
     align-self: center;
 }
 
-section#mySkills article div.descriptionR{
+section#mySkills article div.descriptionR,section#mySkills article div.descriptionL{
     height: 250px;
+    display: flex;
+    flex-direction: column;
     align-content: middle;
-    margin: 200px 0;
+    /* margin: 200px 0; */
 }
 
 .descriptionL{
-    width: 48%;
+    /* width: 48%; */
 }
 
-section#mySkills article div.descriptionL{
+/* section#mySkills article div.descriptionL{
     height: 250px;
+    display: flex;
+    flex-direction: column;
     align-content: middle;
-    margin: 200px 0;
-}
+    /* margin: 200px 0; */
+} */
 
 .desc{
     font-family: Helvetica, sans-serif;
