@@ -2,6 +2,10 @@ nav{
     padding: 1%;
 }
 
+p{
+    font-family: helvetica;
+}
+
 .heroImg{
     height: 150px;
     padding:25px;
@@ -55,59 +59,32 @@ ul li{
 section#mySkills article{
     max-height: 620px;
     display: flex;
+    flex-direction: row;
     margin: 50px;
     border: 2px solid red;
+    flex-wrap: column;
+    justify-content: space-between;
 }
 
-section#mySkills article div.imageContainerR{
-    /* height: 100%; */
-    width: 48%;
-    scale: 0.85;
-}
-
-.imageContainerR{
-    /* float: right; */
-    display: flex;
-    align-content: center;
-}
-
-section#mySkills article div.imageContainerL{
-    /* height: 100%; */
-    width: 48%;
-    scale: 0.85;
-}
-
+.imageContainerR,
 .imageContainerL{
-    /* float: left; */
     display: flex;
-    align-content: center;
+    flex-shrink: 1;
+    border: 2px solid green;
+    width: 50%;
+    max-height: 620px;
 }
 
-.descriptionR{
-    width: 48%;
-    /* float: right; */
+.descriptionR,
+.descriptionL{
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+    margin: 50px;
+    border: 2px solid blue;
+    width: 50%;
     align-self: center;
 }
-
-section#mySkills article div.descriptionR,section#mySkills article div.descriptionL{
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-content: middle;
-    /* margin: 200px 0; */
-}
-
-.descriptionL{
-    /* width: 48%; */
-}
-
-/* section#mySkills article div.descriptionL{
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-content: middle;
-    /* margin: 200px 0; */
-} */
 
 .desc{
     font-family: Helvetica, sans-serif;
@@ -205,7 +182,8 @@ h1{
     #gridContainer{
         margin: 25px;
         display: grid;
-        grid-auto-flow: column;
+        /* grid-auto-flow: column; */
+        grid-template-rows: 300px 100px 300px 100px 300px 100px;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "project1"
@@ -214,5 +192,44 @@ h1{
         "p2Text"
         "project3"
         "p3Text"
+    }
+
+    #project1{
+        grid-area: project1;
+        background-image: url("../Images/Jump\ link\ covers-01.jpg");
+        margin: 2%;
+        background-size: cover;
+    }
+    
+    #project2{
+        grid-area: project2;
+        background-image: url("../Images/Jump\ link\ covers-03.jpg");
+        margin: 2%;
+        background-size: cover;
+    }
+    
+    #project3{
+        grid-area: project3;
+        background-image: url("../Images/Jump\ link\ covers-02.jpg");
+        margin: 2%;
+        background-size: cover;
+    }
+    
+    #p1Text{
+        grid-area: p1Text;
+        text-align: center;
+        font-family: Helvetica;
+    }
+    
+    #p2Text{
+        grid-area: p2Text;
+        text-align: center;
+        font-family: Helvetica;
+    }
+    
+    #p3Text{
+        grid-area: p3Text;
+        text-align: center;
+        font-family: Helvetica;
     }
 }
